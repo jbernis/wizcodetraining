@@ -17,8 +17,8 @@ jobs:
   Wiz-Directory-Scan:
     runs-on: ubuntu-latest
     env:
-      WIZ_CLIENT_ID: ${{ env.WIZ_CLIENT_ID }}
-      WIZ_CLIENT_SECRET: ${{ env.WIZ_CLIENT_SECRET }}
+      WIZ_CLIENT_ID: ${{ vars.WIZ_CLIENT_ID }}
+      WIZ_CLIENT_SECRET: ${{ vars.WIZ_CLIENT_SECRET }}
 
     steps:
       - name: Checkout
